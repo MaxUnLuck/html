@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование графики в HTML-документах</title>
+    <style>
+        .anim 
+        { 
+            width: 200px; 
+            height: 200px;
+            rotate: 0deg;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .anim:hover 
+        {
+            width: 400px; 
+            height: 400px;
+            rotate: 90deg;
+        }
+    </style>
+    <body>
+        <div style="border: solid 5px gray; height: 200px; width: 200px; overflow: hidden;">
+            <img src="i.webp" class="anim"/>
+        </div>
+    </body>
+</html>
