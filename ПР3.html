@@ -4,13 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Использование графики в HTML-документах</title>
+    <style>
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-container .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        
+
+
+
+        .collage {
+            display: flex;
+            position: relative;
+            width: 600px;
+            height: 450px;
+        }
+
+        .photo {
+            position: absolute;
+            border: 4px solid white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+
+        .photo-1 {
+            width: 300px;
+            height: 250px;
+            z-index: 1;
+        }
+
+        .photo-2 {
+            top: 80px;
+            right: 0px;
+            width: 280px;
+            height: 220px;
+            z-index: 2;
+        }
+
+        .photo-3 {
+            bottom: 0px;
+            left: 100px;
+            width: 320px;
+            height: 240px;
+            z-index: 3;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
     <link rel="stylesheet" href="D:\Users\1210N-3\Documents\3-ИСП\ПМ 08\ПиРИП\Шемонаев\VSCode_Week\CSS\form2.css">
 </head>
 <body>
     <!--///////////////////////////////////// Задание №1 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 1</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <HTML>
             <HEAD><TITLE>Графика</TITLE></HEAD>
             <BODY>
@@ -21,30 +96,22 @@
                 <HR ALIGN=CENTER SIZE=2 WIDTH=100 COLOR="blue">
             </BODY>
         </HTML>
-    </div>
     <!--///////////////////////////////////// Задание №2 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 2</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <H1 ALIGN=CENTER>Рисунки в HTML-документах</H1>
         <IMG SRC="picture.jpg" ALT="Это рисунок" HEIGHT=200 WIDTH=150 ALIGN=RIGHT BORDER=4>
-    </div>
     <!--///////////////////////////////////// Задание №3 /////////////////////////////////////////-->
-    <h1 align = center><font color = navy>Задание 3</font></h1>
+    <h1 align = center  style="margin-top: 250px;"><font color = navy>Задание 3</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <HR ALIGN=left SIZE=100 WIDTH=100 COLOR="red">
-    </div>
     <!--///////////////////////////////////// Задание №4 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 4</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <HR ALIGN=center size=200 WIDTH=5 COLOR="blue">
-    </div>
     <!--///////////////////////////////////// Задание №5 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 5</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <HR size=20 WIDTH=100% COLOR="red">
         <HR size=20 WIDTH=100% COLOR="orange">
         <HR size=20 WIDTH=100% COLOR="yellow">
@@ -52,11 +119,9 @@
         <HR size=20 WIDTH=100% color="aqua">
         <HR size=20 WIDTH=100% COLOR="blue">
         <HR size=20 WIDTH=100% COLOR="purple">
-    </div>
     <!--///////////////////////////////////// Задание №6 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 6</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy;">
         <p align = center><font size = 4 color = brown><b>      Живой кефирный тибетский гриб</b></font></p>
         <p><IMG SRC="apple1.png" ALT="Это рисунок" HEIGHT=100 WIDTH=100 ALIGN=left>
         Полученный с его помощью кефир является уникальным лечебным 
@@ -73,7 +138,6 @@
         после еды и один - два раза в неделю устраивать разгрузочные дни.
         Примечание: фон документа – розовый.</p>
         <hr size = 50 color="white">
-    </div>
     <!--///////////////////////////////////// Задание 7№ /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 7</font></h1>
     <hr size = 10 color = navy>
@@ -93,13 +157,44 @@
     <!--///////////////////////////////////// Задание №8 /////////////////////////////////////////-->
     <h1 align = center><font color = navy>Задание 8</font></h1>
     <hr size = 10 color = navy>
-    <div style="border: solid 4px navy; background-image: url('sea.jpg'); height: 700px;">
-        <p align = center><font size = 7 color = blue>Летающий ангел</font></p>
+    <div style=" background-image: url('sea.jpg'); height: 700px;">
+        <p align = center><font size = 10 color = white>Летающий ангел</font></p>
         <marquee behavior = alternate direction = right height 100%><IMG SRC="angel2.png" ALT="Это рисунок" HEIGHT=200 WIDTH=150 ALIGN=right style="padding: 10%; "></marquee>
-        <p style="padding: 5%;">Используйте возможности HTML-языка можно летать ангела по странице.<br>
-        И не только ангела...</p>
-        <IMG SRC="desolator_mini2.png" ALT="Это рисунок" HEIGHT=100 WIDTH=150 ALIGN=left style="padding: 10%;">
+        <p style="margin-left: 40px;"><font color="white" size = 5><b>Используйте возможности HTML-языка можно летать ангела по странице.<br>
+        И не только ангела...</b></font></p>
+        <marquee behavior = alternate direction = down height 100%><IMG SRC="desolator_mini2.png" ALT="Это рисунок" HEIGHT=100 WIDTH=150 ALIGN=left></marquee>
     </div>
-    
+    <!--///////////////////////////////////// Задание №9 /////////////////////////////////////////-->
+    <h1 align = center><font color = navy>Задание 9</font></h1>
+    <hr size = 10 color = navy>
+    <p>сет мечты</p>
+    <div class="tooltip-container">
+        <img src="tower.jpg" alt="tower" width="200" height="200" title="Компьютерный блок на pentium4 и rx580">
+        <div class="tooltip">Комп на pentium4 и rx580</div>
+    </div>
+    <div class="tooltip-container">
+        <img src="monitor.webp" alt="monitor" width="250" height="200">
+        <div class="tooltip">монитор 800х600 на 120hz</div>
+    </div>
+    <div class="tooltip-container">
+        <img src="button.jpg" alt="button" width="300" height="150">
+        <div class="tooltip">клавиатура крутая мембранка</div> 
+    </div>
+    <!--///////////////////////////////////// Задание №10 /////////////////////////////////////////-->
+    <h1 align = center><font color = navy>Задание 10</font></h1>
+    <hr size = 10 color = navy>
+    <div align = center>
+        <div class="collage" style="border: #000000; background-color: #000000;">
+            <div class="photo photo-1">
+                <img src="dima.jpg" alt="dima">
+            </div>
+            <div class="photo photo-2">
+                <img src="apextwn.jpg" alt="apextwin">
+            </div>
+            <div class="photo photo-3">
+                <img src="putin.jpg" alt="putin">
+            </div>  
+        </div>
+    </div>
 </body>
 </html>
