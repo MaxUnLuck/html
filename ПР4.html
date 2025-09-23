@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Использование графики в HTML-документах</title>
     <style>
-        .anim1 {
 
+        .lift-table {
+            animation: lift 3s infinite;
+            border-collapse: collapse;
+            margin: -80px auto;
+        }
+
+        @keyframes lift {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-260px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     </style>
     <link rel="stylesheet" href="D:\Users\1210N-3\Documents\3-ИСП\ПМ 08\ПиРИП\Шемонаев\VSCode_Week\CSS\form2.css">
@@ -118,7 +133,600 @@
     <h1 align = center>Задание 6</h1>
     <hr size = 4 color = black>
     <table BORDER=1 cellspacing = 0>
-        
+        <TR style="background-color: rgba(255, 238, 0, 0.94);">
+            <td style="text-align: center; padding-bottom: 15px;"><b>Код</b></td>
+            <td style="text-align: center;"><b>1</b></td>
+        </TR>
+        <TR style="background-color: rgba(243, 169, 79, 0.94);">
+            <td style="padding-left: 30px;padding-right: 30px; padding-bottom: 15px;"><b>Фамилия</b></td>
+            <td><b>Иванов Иван</b></td>
+        </TR>
+        <TR style="background-color: rgba(143, 205, 246, 0.94);">
+            <td style="padding-top: 10px; text-align: center;"><b>Фото</b></td>
+            <td><img src="apextwn.jpg" alt="apextwn" style="width: 160px; height: 100px;"></td>
+        </TR>
+        <TR style="background-color: rgba(103, 187, 12, 0.94);">
+            <td style="color: red; text-align: center;"><b>Дата </b></td>
+            <td>
+                <table BORDER=1 cellspacing = 0 style="width: 100%;">
+                    <TR style="background-color: rgba(103, 187, 12, 0.94); color: red;">
+                        <td style="text-align: center;"><b>Вес</b></td>
+                        <td style="text-align: center;"><b>Рост</b></td>
+                        <td style="text-align: center;"><b>Пол</b></td>
+                    </TR>
+                </table>
+        </TR>
+        <TR style="background-color: rgba(103, 187, 12, 0.94);">
+            <td style="color: red; text-align: center;"><b>1988 </b></td>
+            <td>
+                <table BORDER=1 cellspacing = 0 style="width: 100%;">
+                    <TR style="background-color: rgba(103, 187, 12, 0.94); color: red;">
+                        <td style="text-align: center;"><b>62</b></td>
+                        <td style="text-align: center;"><b>175</b></td>
+                        <td style="text-align: center;"><b>М</b></td>
+                    </TR>
+                </table>
+            </td>
+        </TR>
+        <TR style="background-color: rgba(243, 169, 79, 0.94);">
+            <td style="text-align: center;"><b>Вид спорта </b></td>
+            <td>Футбол</td>
+        </TR>
     </table>
+    <!--///////////////////////////////////// Задание №7 /////////////////////////////////////////-->
+    <h1 align = center>Задание 7</h1>
+    <hr size = 4 color = black>
+    <p style="text-align: center;"><font size = 5><b>Заявка</b></font></p>
+    <p>на участие _________________________________________________</p>
+    <p style="text-align: center;"><I>наименование учебного заведения</I></p>
+    <p>во втором этапе конкурса по предмету «Прикладная информатика». Для участия в конкурсе направляются:</p>
+    <table BORDER=1 cellspacing = 0>
+        <TR style="background-color: rgba(147, 190, 211, 0.94);">
+            <td style="color: red;"><b>№п/п</b></td>
+            <td style="color: red;"><b>Ф.И.О.</b></td>
+            <td style="color: red;"><b>Наименование учреждения образования</b></td>
+            <td style="color: red;"><b>Курс</b></td>
+            <td style="color: red;"><b>Место в конкурсе</b></td>
+            <td style="color: red;"><b>Ф.И.О., руководителя команды</b></td>
+        </TR>
+        <TR style="background-color: rgba(191, 206, 214, 0.94);">
+            <td style="height: 30px;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </TR>
+        <TR style="background-color: rgba(191, 206, 214, 0.94);">
+            <td style="height: 30px;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </TR>
+        <TR style="background-color: rgba(191, 206, 214, 0.94);">
+            <td style="height: 30px;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </TR>
+    </table>
+    <p>
+        Директор ______________ _________________<br>
+        М.П.<br>
+        «____» _____________ 20__г.
+    </p>
+    <!--///////////////////////////////////// Задание №8 /////////////////////////////////////////-->
+    <h1 align = center>Задание 8</h1>
+    <hr size = 4 color = black>
+    <table BORDER=0 cellspacing = 0>
+        <TR>
+            <td>Правила поведения в кабинете<br><br>
+                1. При входе в кабинет не толкаться в
+                дверях, спокойно занимать свое
+                рабочее место, ничего не трогать на
+                столе.<br>
+                2. В кабинете запрещается
+                находиться в верхней одежде.<br>
+                3. В кабинете запрещается
+                находиться без преподавателя.<br><br><br>
+            </td>
+            <td>
+                В кабинете запрещено:<br><br>
+                1) Трогать разъемы соединительных<br>
+                проводов;
+                2) Прикасаться к проводам питания;<br>
+                3) Прикасаться к экрану и задней стенке
+                монитора;<br>
+                4) Размещать принадлежности на
+                составных блоках компьютера.
+            </td>
+        </TR>
+        <TR>
+            <td>
+                <p style="font-family: 'Fredoka One', cursive; color: red; text-align: center;"><b>Обязанности учащегося</b></p>
+            </td>
+            <td>
+                <img src="dima.jpg" alt="dima" style="width: 300px; height: 200px;">
+            </td>
+        </TR>
+        <TR>
+            <td>
+                <p style="color: navy; padding-left: 20px;"><U><b>перед началом работы на ПК:</b></U></p>
+                <ul>
+                    <li>
+                        Убедитесь в отсутствии видимых
+                        неисправностей, в случае их
+                        обнаружения сообщить
+                        преподавателю;
+                    </li>
+                    <li>
+                        Записать в журнале учета дату и
+                        время начала работы, свою фамилию
+                        и замеченные перед началом работ
+                        неисправности.
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <p style="color: navy; padding-left: 20px;"><U><b>по окончании работы на ПК:</b></U></p>
+                <ul style="list-style: circle;">
+                    <li >
+                        Привести свое рабочее место в порядок;
+                    </li>
+                    <li>
+                        Выключить компьютер;
+                    </li>
+                    <li>
+                        Записать в журнале учета время окончания работы;
+                    </li>
+                    <li>
+                        Сдать преподавателю выданные для работы материалы и пособия.
+                    </li>
+                </ul>
+            </td>
+        </TR>
+    </table>
+    <!--///////////////////////////////////// Задание №9 /////////////////////////////////////////-->
+    <h1 align = center>Задание 9</h1>
+    <hr size = 4 color = black>
+    <table BORDER=0 cellspacing = 0 style="background-image: url('kirovsk.jpg');  background-size: cover; width: 480px; height: 300px; color: white;">
+        <TR>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td style="height: 100px;">
+                новое предожение от lada.
+                старые мащины новые цены.
+            </td>
+        </TR>
+        <TR>
+            <td style="background-image: url(lada.jpg); background-size: cover; width: 160px; height: 100px; text-align: center; color: white;">
+                <s>30 000</s><br>
+                1000
+            </td>
+            <td>
+                
+            </td>
+            <td style="background-image: url(lada2.jpg); background-size: cover; width: 160px; height: 100px; text-align: center; color: white;">
+                <s>25 000</s><br>
+                2000
+            </td>
+        </TR>
+        <TR>
+            <td>
+
+            </td>
+            <td style="background-image: url(lada3.jpg); background-size: cover; width: 160px; height: 100px; text-align: center; color: white;">
+                <s>30 000</s><br>
+                25 000
+            </td>
+            <td>
+                
+            </td>
+        </TR>
+    </table>
+    <!--///////////////////////////////////// Задание №10 /////////////////////////////////////////-->
+    <h1 align = center>Задание 10</h1>
+    <hr size = 4 color = black>
+    <div style="border: solid 1px rgb(109, 109, 109); background-color: rgb(208, 241, 229); text-align: center; height: 500px;">
+        <table BORDER=0 style="background-color: rgb(171, 171, 171);  margin: 0 auto;">
+            <h1 style="text-align: center; color: red">Это дом</h1>
+            <TR>
+                <td style="width: 200px; height: 100px; background-image: url('kirpich.jpeg'); background-size: 100px;">
+                    <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+                <td style="width: 75px;">
+                     
+                </td>
+                <td style="width: 200px; background-image: url('kirpich.jpeg'); background-size: 100px;">
+                     <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+            </TR>
+            <TR>
+                <td style="height: 100px; background-image: url('kirpich.jpeg'); background-size: 100px;">
+                     <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+                <td>
+                     
+                </td>
+                <td style="background-image: url('kirpich.jpeg'); background-size: 100px;">
+                     <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+            </TR>
+            <TR>
+                <td style="height: 100px; background-image: url('kirpich.jpeg'); background-size: 100px;">
+                     <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+                <td>
+                     
+                </td>
+                <td style="background-image: url('kirpich.jpeg'); background-size: 100px;">
+                     <!--//////////////////////////// панель s ////////////////////////////-->
+                    <table BORDER=1>
+                        <TR style="height: 17px;">
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                            <td style="width: 66px;">
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 66px;">
+                            <td>
+                     
+                            </td>
+                            <td style="background-color: white;">
+                                <div style="border: solid 1px black; width: 60px; height: 60px; padding: 2px;">
+                                    <table BORDER=0>
+                                        <TR>
+                                            <td>
+                                                <div style="border: solid 1px black; width: 20px; height: 53px;"></div>
+                                            </td>
+                                            <td>
+                                                <table BORDER=0>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td>
+                                                             <div style="border: solid 1px black; width: 24px; height: 24px;"></div>
+                                                        </td>
+                                                    </TR>
+                                                </table>
+                                            </td>
+                                        </TR>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                        <TR style="height: 17px;">
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                            <td>
+                     
+                            </td>
+                        </TR>
+                     </table>
+                     <!--//////////////////////////// панель e ////////////////////////////-->
+                </td>
+            </TR>
+        </table>
+
+        <table class="lift-table" style="width: 75px; height: 100px; background-image: url('lift.png'); background-size: cover;">
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+    </div>
+
 </body>
 </html>

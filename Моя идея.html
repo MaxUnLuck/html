@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анонимный имедж борд</title>
+</head>
+    <body style="margin: 0; height: 100vh;">
+        <!-- Div 1: Верхний блок 20% высоты -->
+    <div style="height: 10%; background: lightgray; padding: 10px; box-sizing: border-box;">
+    Div 1 - Верхняя часть (20% высоты)
+    </div>
+
+    <!-- Основной контейнер -->
+    <div style="height: 80%;">
+
+    <!-- Div 2: Левый блок -->
+    <div style="float: left; width: 30%; height: 100%; background: lightblue; padding: 10px; box-sizing: border-box;">
+        Div 2 - Левая сторона (30% ширины)
+    </div>
+
+    <!-- Div 3: Правый блок -->
+    <div style="float: right; width: 70%; height: 100%; background: lightgreen; padding: 0; box-sizing: border-box;">
+
+        <!-- Div 4: Верхняя часть в Div 3 -->
+        <div style="height: 90%; background: orange; padding: 10px; box-sizing: border-box;">
+        Div 4 - Верх в Div 3 (70% высоты)
+        </div>
+
+        <!-- Div 5: Нижняя часть в Div 3 -->
+        <div style="height: 10%; background: pink; padding: 10px; box-sizing: border-box;">
+            <input type="text" placeholder="Введите текст" style="width: 80%">
+            <input type="file" placeholder="Введите текст" style="width: 15%">
+            <button>отправить</button>
+        </div>
+
+    </div>
+
+    <div style="clear: both;"></div>
+    </body>
+</html>
